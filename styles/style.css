@@ -17,6 +17,7 @@
 
 .row {
     vertical-align: top;
+
 }
 
 .top, .bottom {
@@ -29,4 +30,73 @@
 
 .center{
     text-align: center;
+}
+
+.image {
+    scale: 350%;
+}
+
+.fa-circle {
+    color: black;
+}
+
+a:active {
+    color:inherit;
+}
+
+.link {
+    display: inline;
+    margin-left : 25px;
+    color: black;
+    font-family:  sans-serif;
+
+}
+
+a:visited {
+    color:inherit;
+}
+
+a:link {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+
+#linkedin{
+    margin-top: 50px;
+    /* border : 1px solid black; */
+
+}
+
+
+
+
+.inner-circle{
+    background: url("/img/me.png");
+    background-size: cover;
+    background-position: 15%;
+    display:inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: -200px;
+  }
+.arrow {
+    margin-top: 25px;
+    scale: 300%;
+}
+.box {
+    width:fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
