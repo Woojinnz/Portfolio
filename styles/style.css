@@ -178,7 +178,7 @@ a:link {
     }
 
     #linkedin{
-        margin-top: -200px;
+        /* margin-top: -120px; */
         /* border : 1px solid black; */ 
         transform: scale(1);
         transition: all ease .3s;
