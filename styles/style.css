@@ -119,6 +119,12 @@ a:link {
     transition: all ease .3s;
 }
 
+#linkedin-mobile{
+    /* border : 1px solid black; */ 
+    transform: scale(1);
+    transition: all ease .3s;
+}
+
 #linkedin:hover {
     transform: scale(1.15);
 }
