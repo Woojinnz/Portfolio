@@ -145,8 +145,8 @@ a:link {
 
 
 .inner-circle{
-    background-image: url("/img/me.webp"), url("/img/circleback.pg") ;
-    background-size: cover, cover;
+    background-image: url("/img/me.webp");
+    background-size: cover;
     background-position: 15%;
     display:inline-block;
     width: 400px;
@@ -157,8 +157,8 @@ a:link {
   }
   
 .inner-circle-mobile{
-    background-image: url("/img/me.png"), url("/img/circleback.pg") ;
-    background-size: cover, cover;
+    background-image: url("/img/me.png") ;
+    background-size: cover;
     background-position: 15%;
     display:inline-block;
     width: 450px;
