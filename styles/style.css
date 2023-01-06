@@ -1,6 +1,8 @@
 @font-face {
     font-family : Roboto;
-    src:url("/styles/Roboto/Roboto-Bold.ttf")
+
+    src:url("/styles/Roboto/Roboto-Bold.ttf");
+    font-display: swap;
 }
 
 @font-face {
@@ -18,7 +20,7 @@
 }
 
 .background {
-    background-image: url("/img/b10.png");
+    background-image: url("/img/b10.webp");
     /* background-color: #242582; */
 }
 
@@ -43,7 +45,7 @@
 
 .column {
     float: left;
-    height: 85vh;
+    height: 80vh;
 }
 
 .left, .right {
@@ -143,7 +145,7 @@ a:link {
 
 
 .inner-circle{
-    background-image: url("/img/me.png"), url("/img/circleback.pg") ;
+    background-image: url("/img/me.webp"), url("/img/circleback.pg") ;
     background-size: cover, cover;
     background-position: 15%;
     display:inline-block;
@@ -151,7 +153,6 @@ a:link {
     height: 400px;
     border-radius: 50%;
     background-color: rgb(0,0,0,0.1);
-    margin-top: 100px;
     border: 2px dashed black;
   }
   

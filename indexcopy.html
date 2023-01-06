@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 
 <html>
+<script>
+    var hasTouchScreen = false;
+
+    if ("maxTouchPoints" in navigator) {
+        hasTouchScreen = navigator.maxTouchPoints > 0;
+    } else if ("msMaxTouchPoints" in navigator) {
+        hasTouchScreen = navigator.msMaxTouchPoints > 0;
+    } else {
+        var mQ = window.matchMedia && matchMedia("(pointer:coarse)");
+        if (mQ && mQ.media === "(pointer:coarse)") {
+            hasTouchScreen = !!mQ.matches;
+        } else if ('orientation' in window) {
+            hasTouchScreen = true; // deprecated, but good fallback
+        } else {
+            // Only as a last resort, fall back to user agent sniffing
+            var UA = navigator.userAgent;
+            hasTouchScreen = (
+                /\b(BlackBerry|webOS|iPhone|IEMobile)\b/i.test(UA) ||
+                /\b(Android|Windows Phone|iPad|iPod)\b/i.test(UA)
+            );
+        }
+    }
+
+    if (hasTouchScreen != true) {
+
+        window.location.replace("/pages/index_desktop.html");
+
+    }
+
+</script>
+
 <script defer src="/styles/fontawesome/js/all.js"></script>
 <link rel="stylesheet" type="text/css" href="/styles/style.css" />
 
 <!-- Head -->
 
 <head>
-    <meta name="viewport" content="width=device-width , initial-scale =1">
     <title> Woojin Jeon</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
 </head>
@@ -32,9 +62,9 @@
             <div class="row top" style="padding:20px">
 
             </div>
-            <div id="linkedin" class="row rowmiddle box" style="cursor:pointer"
+            <div id="linkedin-mobile" class="row rowmiddle box" style="cursor:pointer"
                 onclick="window.open('https://nz.linkedin.com/in/woojin-jeon-885938222', '_blank');">
-                <span class="fa-layers fa-5x">
+                <span class="fa-layers fa-10x">
                     <i class="fa-solid fa-square" style="color:white"></i>
                     <i class="fa-brands fa-linkedin" style="color: #0077B5;" data-fa-transform="shrink-0"></i>
 
@@ -47,7 +77,7 @@
             <div id="github" class="row bottom box" style="cursor:pointer"
                 onclick="window.open('https://github.com/Woojin-nz', '_blank');">
 
-                <span class="fa-layers fa-5x">
+                <span class="fa-layers fa-10x">
                     <i class="fa-solid fa-square" style="color:white"></i>
                     <i class="fa-brands fa-square-github" style="color:#333;"></i>
                 </span>
@@ -61,19 +91,19 @@
 
         <!-- TOP MIDDLE -->
         <div class="row top " style="text-align:center;">
-            <span class="inner-circle">
+            <span class="inner-circle-mobile">
             </span>
-            <h1 class="name"> Woojin Jeon</h1>
-            <p class="status" style="margin-top:-15px">University of Auckland</p>
+            <h1 class="name-mobile"> Woojin Jeon</h1>
+            <p class="status-mobile" style="margin-top:-15px">University of Auckland</p>
 
             <a href="/pages/main.html">
-                <i class="fa-regular fa-circle-right arrow fa-5x fa-beat"
+                <i class="fa-regular fa-circle-right arrow fa-10x fa-beat"
                     style="--fa-animation-duration: 5s;--fa-beat-scale: 1.2;"></i></a>
+
         </div>
 
         <!-- MIDDLE MIDDLE -->
         <div class="row rowmiddle " style="text-align:center;">
-
 
         </div>
         <!-- BOTTOM MIDDLE -->
