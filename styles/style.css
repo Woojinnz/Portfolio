@@ -19,6 +19,7 @@
     box-sizing: border-box;
 }
 
+
 .background {
     background-image: url("/img/b10.webp");
     /* background-color: #242582; */
@@ -46,7 +47,7 @@
 
 .column {
     float: left;
-    height: 80vh;
+    height:99vh;
 }
 
 .left, .right {
@@ -74,11 +75,11 @@
 }
 
 .top, .bottom {
-    height: 33.33%;
+    height: 33.32%;
 }
 
 .rowmiddle {
-    height: 33.33%;
+    height: 33.32%;
 }
 
 .center{
@@ -116,7 +117,7 @@ a:link {
 
 
 #linkedin{
-    margin-top: 50px;
+    margin-top: -50px;
     /* border : 1px solid black; */ 
     transform: scale(1);
     transition: all ease .3s;
@@ -177,16 +178,11 @@ a:link {
     }
 
     #linkedin{
-        margin-top: -20px;
+        margin-top: -30px;
         /* border : 1px solid black; */ 
         transform: scale(1);
         transition: all ease .3s;
     }
-    .column {
-        float: left;
-        height:65vh;
-    }
-    
     
       
 }
