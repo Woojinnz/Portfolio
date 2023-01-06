@@ -22,6 +22,7 @@
 .background {
     background-image: url("/img/b10.webp");
     /* background-color: #242582; */
+
 }
 
 .overlay {
@@ -152,10 +153,25 @@ a:link {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    margin-top: 90px;
+    margin-top: 20px;
     background-color: rgb(0,0,0,0.1);
     border: 2px dashed black;
   }
+@media only screen and (max-width: 850px){
+    .inner-circle{
+        background-image: url("/img/me.webp");
+        background-size: cover;
+        background-position: 15%;
+        display:inline-block;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        margin-top: 20px;
+        background-color: rgb(0,0,0,0.1);
+        border: 2px dashed black;
+      }
+}
+
   
 .inner-circle-mobile{
     background-image: url("/img/me.png") ;
