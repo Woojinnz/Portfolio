@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <link rel="stylesheet" href="/styles/fontawesome/all.css" />
+    <script defer src="/styles/fontawesome/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
 
     <!-- Head -->
@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
     </head>
 
-    <body>
+    <body class="background" >
         
         <div class="column left">
             
@@ -26,15 +26,27 @@
             </div>
 
             <!-- BOTTOM LEFT -->
-            <div class="row bottom ">
+            <div class="row bottom " style="padding:20px"; >
                 <div class="row top" style="padding:20px">
                     
                 </div>
-                <div id="linkedin" class="row rowmiddle box" style="padding:20px;color:#0077B5; cursor:pointer" onclick="window.open('https://nz.linkedin.com/in/woojin-jeon-885938222', '_blank');">
-                    <i class="fa-brands fa-linkedin image"></i> 
+                <div id="linkedin" class="row rowmiddle box" style="margin-top:-25px;cursor:pointer" onclick="window.open('https://nz.linkedin.com/in/woojin-jeon-885938222', '_blank');">
+                    <span class="fa-layers fa-5x">
+                        <i class="fa-solid fa-square" style="color:white" ></i>  
+                        <i class="fa-brands fa-linkedin" style="color: #0077B5;" data-fa-transform="shrink-0" ></i>
+                        
+                        
+                        
+                    </span>
+                    
+                    
                 </div>
-                <div id="github"class="row bottom box" style="padding:20px;color:#333;cursor:pointer" onclick="window.open('https://github.com/Woojin-nz', '_blank');">
-                    <i class="fa-brands fa-square-github image"></i>
+                <div id="github"class="row bottom box" style="cursor:pointer" onclick="window.open('https://github.com/Woojin-nz', '_blank');">
+
+                    <span class="fa-layers fa-5x"> 
+                        <i class="fa-solid fa-square" style="color:white" ></i>  
+                        <i class="fa-brands fa-square-github" style="color:#333;"></i>
+                    </span>
                 </div>
 
             </div>
@@ -53,11 +65,10 @@
                 <span class="inner-circle">
                 </span>
                 <h1> Woojin Jeon</h1>
-                <p style="margin-top:-15px">
-                    <a href="mailto:woojinjn@gmail.com?subject= Hello!">woojinjn@gmail.com</p> </a>
+                <p class="status" style="margin-top:-15px">University of Auckland</p>
 
                 <a href="/pages/main.html">
-                <i class="fa-regular fa-circle-right arrow"></i></a>
+                <i class="fa-regular fa-circle-right arrow fa-5x"></i></a>
                 
             </div>
             <!-- BOTTOM MIDDLE -->
