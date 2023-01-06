@@ -22,33 +22,34 @@
     /* background-color: #242582; */
 }
 
+.overlay {
+    color: rgb(238, 78, 52);
+    background-color: rgba(241, 116, 97, 0.1);
+    background-blend-mode: multiply;
+}
+
 .name {
     font-size:40px;
-    color: black;
+    color: #000000;
     font-family: Roboto;
 }
 
 .column {
     float: left;
-    height: 90vh;
+    height: 85vh;
 }
 
 .left, .right {
     width: 25%;
-}
-.proceed{
-    color:#C1CAFC;
-}
-.proceed:hover{
-    color:grey;
 }
 .middle{
     width: 50%;
 }
 
 .status {
-    color: #8396a5;
+    color: #101820FF;
     font-family: Roboto;
+    font-size: 15px;
 }
 
 .row {
@@ -100,9 +101,25 @@ a:link {
 
 #linkedin{
     margin-top: 50px;
-    /* border : 1px solid black; */
-
+    /* border : 1px solid black; */ 
+    transform: scale(1);
+    transition: all ease .3s;
 }
+
+#linkedin:hover {
+    transform: scale(1.15);
+}
+
+#github{
+    /* border : 1px solid black; */ 
+    transform: scale(1);
+    transition: all ease .3s;
+}
+
+#github:hover {
+    transform: scale(1.15);
+}
+
 
 
 
@@ -114,12 +131,17 @@ a:link {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-color: rgb(0,0,0,0);
-    margin-top: -100px;
+    background-color: rgb(0,0,0,0.1);
+    margin-top: -140px;
+    border: 2px dashed black;
   }
 .arrow {
     margin-top: 25px;
-   
+    text-decoration: none;
+    color:rgb(0,0,0,0.8);
+}
+.arrow:hover {
+    color:grey;
 }
 .box {
     width:fit-content;
