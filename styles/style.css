@@ -1,5 +1,31 @@
+@font-face {
+    font-family : Roboto;
+    src:url("/styles/Roboto/Roboto-Bold.ttf")
+}
+
+@font-face {
+    font-family : Merriweather;
+    src:url("/styles/Merriweather/Merriweather-Black.ttf")
+}
+
+@font-face {
+    font-family : Monocraft;
+    src:url("/styles/Monocraft.ttf")
+}
+
 * {
     box-sizing: border-box;
+}
+
+.background {
+    background-image: url("/img/b10.png");
+    /* background-color: #242582; */
+}
+
+.name {
+    font-size:40px;
+    color: black;
+    font-family: Roboto;
 }
 
 .column {
@@ -10,13 +36,19 @@
 .left, .right {
     width: 25%;
 }
-
+.proceed{
+    color:#C1CAFC;
+}
+.proceed:hover{
+    color:grey;
+}
 .middle{
     width: 50%;
 }
 
 .status {
-    color: grey;
+    color: #8396a5;
+    font-family: Roboto;
 }
 
 .row {
@@ -36,8 +68,8 @@
     text-align: center;
 }
 
-.image {
-    scale: 350%;
+.scale {
+    font-size: 40px;
 }
 
 .fa-circle {
@@ -62,7 +94,7 @@ a:visited {
 
 a:link {
     text-decoration: none;
-    color:black;
+    color:rgb(46, 45, 45);
 }
 
 
@@ -75,14 +107,14 @@ a:link {
 
 
 .inner-circle{
-    background: url("/img/me.png");
-    background-size: cover;
+    background-image: url("/img/me.png"), url("/img/circleback.pg") ;
+    background-size: cover, cover;
     background-position: 15%;
     display:inline-block;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0,0,0,0);
     margin-top: -100px;
   }
 .arrow {
