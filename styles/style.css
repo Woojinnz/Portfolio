@@ -48,7 +48,7 @@ body {
 }
 
 .circle{
-    background-image: url("/img/circle.webp");
+    /* background-image: url("/img/me.webp"); */
     background-size: cover;
     /* background-position: 10%; */
     display:block;
@@ -110,3 +110,4 @@ a:active {
 a:link {
     text-decoration: none;
     color:rgb(46, 45, 45);
+}
